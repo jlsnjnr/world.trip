@@ -5,7 +5,7 @@ export default function BannerSingle() {
     <Flex color="light.100" backgroundImage='/images/city.png' w='100%' h='500px' bgRepeat='no-repeat' bgSize='cover'>
       <Container maxW='1160px'>
         <Flex justify='bottom' h='100%'>
-          <Heading mt='400px' fontWeight='medium'>Europa</Heading>
+          <Heading mt='400px' fontSize="48px" fontWeight='semibold'>Europa</Heading>
         </Flex>
       </Container>
     </Flex>
