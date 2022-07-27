@@ -1,0 +1,40 @@
+{
+  "continents": [
+    { 
+      "id": "europa", 
+      "image": "https://images.unsplash.com/photo-1560394638-7b2346507d03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "headingTitle": "Europa",
+      "desc": "O continente mais antigo."
+    },
+    { 
+      "id": "north-america",
+      "image": "https://images.unsplash.com/photo-1603015245012-68988952fc73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "headingTitle": "América do Norte",
+      "desc": "A fronteira entre Estados Unidos e Canadá é a maior fronteira entre países do mundo, com 8.851 quilômetros de extensão."
+    },
+    {
+      "id": "south-america", 
+      "image": "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80",
+      "headingTitle": "América do Sul",
+      "desc": "O continente é o lar da cidade mais ao sul do mundo, Ushuaia, conhecida como o Fim do Mundo."
+    },
+    { 
+      "id": "asia", 
+      "image": "https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "headingTitle": "Ásia",
+      "desc": "Na Ásia está o pico mais alto do planeta."
+    },
+    { 
+      "id": "africa",
+      "image": "https://images.unsplash.com/photo-1484318571209-661cf29a69c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "headingTitle": "África",
+      "desc": "O Nilo é considerado o maior rio em extensão do mundo, podendo, inclusive, ser visto do espaço."
+    },
+    { 
+      "id": "oceania", 
+      "image": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "headingTitle": "Oceania",
+      "desc": "É onde fica um dos lugares mais isolados da Terra"
+    }
+  ]
+}
