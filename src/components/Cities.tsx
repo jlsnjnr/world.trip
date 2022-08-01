@@ -3,11 +3,11 @@ import { Container, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/re
 export default function Cities() {
   return (
     <Container pb='40px' maxW='1160px'>
-      <Heading fontWeight='medium'>Cidades +100</Heading>
+      <Heading  fontSize={['18px','3xl']} fontWeight='medium'>Cidades +100</Heading>
 
-      <SimpleGrid pt='40px' columns={4} alignItems='center' spacingY='40px'>
-        <Flex direction='column' w='256px' h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
-          <Image textAlign='center' objectFit='fill' w='256px' h='173px' src="/images/london.png" alt="Logo" />
+      <SimpleGrid pt='40px' columns={[1,4]} mx={['auto', '0']} alignItems='center' spacingY='40px'>
+        <Flex direction='column' w={['100%','256px']} h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
+          <Image textAlign='center' objectFit='fill' w={['100%','256px']} h='173px' src="/images/london.png" alt="Logo" />
           <Flex my='20px' align='center' justify='space-between' px='20px'>
             <Flex direction='column' gap='10px'>
               <Heading fontFamily='Barlow' fontWeight='semibold' fontSize='20px'>Londres</Heading>
@@ -17,8 +17,8 @@ export default function Cities() {
           </Flex>
         </Flex>
 
-        <Flex direction='column' w='256px' h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
-          <Image textAlign='center' objectFit='fill' w='256px' h='173px' src="/images/paris.png" alt="Logo" />
+        <Flex direction='column' w={['100%','256px']} h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
+          <Image textAlign='center' objectFit='fill' w={['100%','256px']} h='173px' src="/images/paris.png" alt="Logo" />
           <Flex my='20px' align='center' justify='space-between' px='20px'>
             <Flex direction='column' gap='10px'>
               <Heading fontFamily='Barlow' fontWeight='semibold' fontSize='20px'>Paris</Heading>
@@ -28,8 +28,8 @@ export default function Cities() {
           </Flex>
         </Flex>
 
-        <Flex direction='column' w='256px' h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
-          <Image textAlign='center' objectFit='fill' w='256px' h='173px' src="/images/roma.png" alt="Logo" />
+        <Flex direction='column' w={['100%','256px']} h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
+          <Image textAlign='center' objectFit='fill' w={['100%','256px']} h='173px' src="/images/roma.png" alt="Logo" />
           <Flex my='20px' align='center' justify='space-between' px='20px'>
             <Flex direction='column' gap='10px'>
               <Heading fontFamily='Barlow' fontWeight='semibold' fontSize='20px'>Roma</Heading>
@@ -39,8 +39,8 @@ export default function Cities() {
           </Flex>
         </Flex>
 
-        <Flex direction='column' w='256px' h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
-          <Image textAlign='center' objectFit='fill' w='256px' h='173px' src="/images/praga.png" alt="Logo" />
+        <Flex direction='column' w={['100%','256px']} h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
+          <Image textAlign='center' objectFit='fill' w={['100%','256px']} h='173px' src="/images/praga.png" alt="Logo" />
           <Flex my='20px' align='center' justify='space-between' px='20px'>
             <Flex direction='column' gap='10px'>
               <Heading fontFamily='Barlow' fontWeight='semibold' fontSize='20px'>Praga</Heading>
@@ -50,8 +50,8 @@ export default function Cities() {
           </Flex>
         </Flex>
 
-        <Flex direction='column' w='256px' h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
-          <Image textAlign='center' objectFit='fill' w='256px' h='173px' src="/images/amsterda.png" alt="Logo" />
+        <Flex direction='column' w={['100%','256px']} h='279px' bg='white' border='1px' borderColor='highlight.300' borderRadius='4px'>
+          <Image textAlign='center' objectFit='fill' w={['100%','256px']} h='173px' src="/images/amsterda.png" alt="Logo" />
           <Flex my='20px' align='center' justify='space-between' px='20px'>
             <Flex direction='column' gap='10px'>
               <Heading fontFamily='Barlow' fontWeight='semibold' fontSize='20px'>Amsterdã</Heading>

@@ -42,28 +42,28 @@ export default function TravelTypes() {
           <Flex align='center' justify='space-between'>
             <Flex align='center' gap='10px' justify='center'>
               <Box w='8px' h='8px' borderRadius='full' bg='highlight.500' />
-              <Heading fontSize='24px' fontWeight='semibold'>vida noturna</Heading>
+              <Heading fontSize={['18px','24px']} fontWeight={['medium','semibold']}>vida noturna</Heading>
             </Flex>
             <Flex align='center' gap='10px' justify='center'>
               <Box w='8px' h='8px' borderRadius='full' bg='highlight.500' />
-              <Heading fontSize='24px' fontWeight='semibold'>praia</Heading> 
+              <Heading fontSize={['18px','24px']} fontWeight={['medium','semibold']}>praia</Heading> 
             </Flex>
           </Flex>
       
           <Flex align='center' justify='space-between'>
             <Flex align='center' gap='10px' justify='center'>
               <Box w='8px' h='8px' borderRadius='full' bg='highlight.500' />
-              <Heading fontSize='24px' fontWeight='semibold'>moderno</Heading>
+              <Heading fontSize={['18px','24px']} fontWeight={['medium','semibold']}>moderno</Heading>
             </Flex>
             <Flex align='center' gap='10px' justify='center'>
               <Box w='8px' h='8px' borderRadius='full' bg='highlight.500' />
-              <Heading fontSize='24px' fontWeight='semibold'>clássico</Heading>
+              <Heading fontSize={['18px','24px']} fontWeight={['medium','semibold']}>clássico</Heading>
             </Flex>
           </Flex>
         
           <Flex align='center' gap='10px' justify='center'>
             <Box w='8px' h='8px' borderRadius='full' bg='highlight.500' />
-            <Heading fontSize='24px' fontWeight='semibold'>e mais...</Heading>
+            <Heading fontSize={['18px','24px']} fontWeight={['medium','semibold']}>e mais...</Heading>
           </Flex>
         </Flex>
       )}

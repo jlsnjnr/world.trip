@@ -61,8 +61,8 @@ export default function Home( {posts}: PostsProps ) {
                       textAlign='center'
                     >
                       <Stack spacing="20px">
-                        <Heading fontWeight='medium'>{post.title}</Heading>
-                        <Text maxW={['100%','500px']} px={['10%', '0']} fontSize='20px' color='light.150'>{post.desc}</Text>
+                        <Heading fontSize={['24px','4xl']} fontWeight='medium'>{post.title}</Heading>
+                        <Text maxW={['100%','500px']} px={['10%', '0']} fontSize={['16px','20px']} color='light.150'>{post.desc}</Text>
                       </Stack>
                     </Flex>
                   </Flex>

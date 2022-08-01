@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Image, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Image, SimpleGrid, Text, Tooltip, useBreakpointValue } from "@chakra-ui/react";
 import { GetServerSideProps, GetStaticProps } from "next";
 import Head from "next/head";
 import api from "../services/api";
@@ -23,6 +23,11 @@ interface PostProps {
 
 export default function Post( { post }: PostProps ) {
 
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
     <>
       <Head>
@@ -30,37 +35,37 @@ export default function Post( { post }: PostProps ) {
       </Head>
 
       <LogoReturn />
-      <Flex color="light.100" backgroundImage={post.image} w='100%' h='500px' backgroundPosition="center" bgRepeat='no-repeat' bgSize='cover'>
+
+      <Flex color="light.100" backgroundImage={post.image} w='100%' h={['163px','500px']} backgroundPosition="center" bgRepeat='no-repeat' bgSize='cover'>
         <Flex w="100%" bg='dark.300' h="100%" align='center' justify='center'>
           <Container maxW='1160px'>
-            <Flex justify='bottom' h='100%'>
-              <Heading mt='340px' fontSize="48px" fontWeight='semibold'>{post.heading}</Heading>
+            <Flex justify={['center', 'flex-start']} h='100%'>
+              <Heading mt={['0','340px']} fontSize={["28px","48px"]} fontWeight='semibold'>{post.heading}</Heading>
             </Flex>
           </Container>
         </Flex>
       </Flex>      
       
       <Container maxW='1160px'>
-        <SimpleGrid py='80px' columns={2} alignItems='center'>
-          <Text fontSize='24px'>{post.descSingle}</Text>
+        <SimpleGrid py='80px' columns={[1,2]} alignItems='center'>
+          <Text fontSize={['14px','24px']}>{post.descSingle}</Text>
 
           <Box>
-            <SimpleGrid px='30px' columns={3} alignItems='center'>
-
-              <Flex direction="column" align="center" textAlign='center'>
-                <Heading fontSize="48px" color='highlight.500'>{post.countrys}</Heading>
-                <Text fontSize='20px' fontWeight="semibold">países</Text>
+            <SimpleGrid px={['0','30px']} py={['20px', '0']} columns={3}>
+              <Flex direction="column" align={["flex-start","center"]} textAlign='center'>
+                <Heading fontSize={["24px","48px"]} color='highlight.500'>{post.countrys}</Heading>
+                <Text fontSize={['18px','20px']} fontWeight={["medium","semibold"]}>países</Text>
               </Flex>
 
-              <Flex direction="column" align="center" textAlign='center'>
-                <Heading fontSize="48px" color='highlight.500'>{post.linguages}</Heading>
-                <Text fontSize='20px' fontWeight="semibold">línguas</Text>
+              <Flex direction="column" align={["flex-start","center"]} textAlign='center'>
+                <Heading fontSize={["24px","48px"]} color='highlight.500'>{post.linguages}</Heading>
+                <Text fontSize={['18px','20px']} fontWeight={["medium","semibold"]}>línguas</Text>
               </Flex>
 
-              <Flex direction="column" align="center" textAlign='center'>
-                <Heading fontSize="48px" color='highlight.500'>{post.citys}</Heading>
-                <Flex align="center" gap='5px'>
-                  <Text fontSize='20px' fontWeight="semibold">cidades +100</Text>
+              <Flex direction="column" align={["flex-start","center"]} textAlign='center'>
+                <Heading fontSize={["24px","48px"]} color='highlight.500'>{post.citys}</Heading>
+                <Flex align={["flex-start","center"]} textAlign={['left','center']} gap='5px'>
+                  <Text fontSize={['18px','20px']} fontWeight={["medium","semibold"]}>cidades +100</Text>
                   <Tooltip label={post.info} aria-label='A tooltip'>
                     <Box><FiInfo /></Box>
                   </Tooltip>

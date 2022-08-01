@@ -7,7 +7,7 @@ export default function BannerHome() {
   });
 
   return (
-    <Flex color="light.100" backgroundImage='/images/Background.png' w='100%' h='335px' bgRepeat='no-repeat' bgSize='cover'>
+    <Flex color="light.100" backgroundImage='/images/Background.png' w='100%' h={['163px','335px']} bgRepeat='no-repeat' bgSize='cover'>
       <Container maxW='1160px'>
         <Flex w="100%" h="100%" align='center' justify='space-between'>
           <Flex         
