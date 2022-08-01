@@ -18,7 +18,7 @@ type Post = {
   id: string;
   slug: string;
   image: string;
-  headingTitle: string;
+  title: string;
   desc: string;
 }
 
@@ -39,7 +39,7 @@ export default function Home( {posts}: PostsProps ) {
       <DividerUi />
 
       <Flex w='100%' align='center' justify='center' my='50px'>
-        <Heading maxW='536px'textAlign='center' fontWeight='medium'>Vamos nessa? Então escolha seu continente</Heading>
+        <Heading maxW={['100%','536px']} fontSize={["20px", "4xl"]} textAlign='center' fontWeight='medium'>Vamos nessa? Então escolha seu continente</Heading>
       </Flex>
 
       <Container maxW='1160px' my='80px'>
@@ -61,8 +61,8 @@ export default function Home( {posts}: PostsProps ) {
                       textAlign='center'
                     >
                       <Stack spacing="20px">
-                        <Heading fontWeight='medium'>{post.headingTitle}</Heading>
-                        <Text maxW='500px' fontSize='20px' color='light.150'>{post.desc}</Text>
+                        <Heading fontWeight='medium'>{post.title}</Heading>
+                        <Text maxW={['100%','500px']} px={['10%', '0']} fontSize='20px' color='light.150'>{post.desc}</Text>
                       </Stack>
                     </Flex>
                   </Flex>
@@ -83,7 +83,7 @@ export const getStaticProps: GetStaticProps = async () => {
     return {
       id: post.id,
       image: post.image,
-      headingTitle: post.headingTitle,
+      title: post.title,
       desc: post.desc,
     };
   });
